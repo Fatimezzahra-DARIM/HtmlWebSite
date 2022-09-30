@@ -111,4 +111,6 @@ a{
     padding-top: 30px;
     text-align: center;
  }
- 
+ li{
+    list-style: none;
+ }
