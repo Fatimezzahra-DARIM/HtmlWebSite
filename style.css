@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500;1,900&display=swap');
-
+*{
+   margin: 0;
+} 
 ul{
     padding-right: 50px;
     display: flex;
@@ -12,7 +14,6 @@ body{
     
 }
 header{
-    /* border: solid; */
    border-color: gray;
    background-color: rgb(222, 220, 207);
    
@@ -23,44 +24,37 @@ header{
     height:8rem ;
     border-radius: 10px;
 }
-
 a:hover{
     color: blue;
-    text-decoration: underline;
-    
+    text-decoration: underline; 
 }
 a{
     text-decoration: none;
     color:black;
 }
-.Nav1{
-    /* padding-right: 100px; */
-    padding-left: 175px;
+.Nav1{   
     display: flex;
-    /* justify-content: space-between; */
    list-style: none;
    font-family: 'Roboto', sans-serif;
-   font-size: x-large;
-}
-.Nav1 *{
-    margin-right: 10px;
-
-}
+   max-width: 100%;
+} 
 .navbar {
     padding-top: 0px;
-    /* border: solid; */
     margin:0px;
-   
+    display:flex;
 }
 .navlist {
     margin:0px;
 }
- *{
-    margin: 0;
-} 
+ 
 
 .navbarListLink1{
     text-decoration: underline; 
+    
+ }
+ .navbarListLink
+ {
+   margin-left: 40px; 
  }
  h2{
     text-align: center;
@@ -90,19 +84,17 @@ a{
  .contenu
  {   background-color: rgb(222, 220, 207);
     padding: 1rem;
-    /* border-style: solid; */
     border-radius: 10px;
-   
     width:200px ;
     height: 300px;
     box-shadow: 0 0 22px  8px #373636; 
+    margin-bottom: 20px;
  }
  .contenu:hover
  {
     width:250px ;
     height: 350px;
     padding:1rem;
-    
  }
  .rrp{
     color: grey;
@@ -113,4 +105,49 @@ a{
  }
  li{
     list-style: none;
+    margin: 0px;
  }
+/* .navbarList
+{
+   margin-left: auto;
+   margin-right: auto;
+} */
+
+ @media only screen and (max-width: 600px) {
+   #navbarLogo{
+      width: 10%;
+      height: 10%;
+      margin-left: 45%;
+      margin-right: 45%;
+   
+      
+   }
+   .navbar
+   {
+      display:block;
+   }
+   .Nav1
+   {
+       /* padding-right: 100px; */
+      padding-left: 24px;
+      /* justify-content: space-between; */
+      list-style: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: x-large;
+      
+      
+      
+   }
+   body {
+      /* border: solid; */
+      min-width:422px;
+      
+   }
+   
+}
+
+   @media print {
+      .navbar{
+         display:none;
+      }
+   }
